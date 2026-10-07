@@ -6,6 +6,7 @@ const noteCount = document.querySelector("#note-count");
 const errorMessage = document.querySelector("#error-message");
 const searchInput = document.querySelector("#search-input");
 
+// Load saved notes from localStorage when the app opens
 let notes = JSON.parse(localStorage.getItem("quicknotes")) || [];
 
 function render(searchTerm = "") {
