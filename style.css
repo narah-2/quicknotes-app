@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form input,
+form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input {
+    flex: 1;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #008080;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f5f;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#notes-list {
+    list-style: none;
+    padding: 0;
+}
+
+.note {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    background-color: #fafafa;
+}
+
+.category-personal {
+    border-left: 6px solid teal;
+}
+
+.category-work {
+    border-left: 6px solid darkred;
+}
+
+.category-study {
+    border-left: 6px solid blue;
+}
+
+.note-category {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.note-date {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.note button {
+    margin-top: 10px;
+    background-color: #b22222;
+}
+
+.note button:hover {
+    background-color: #7a1111;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    form input,
+    form select,
+    form button {
+        width: 100%;
+    }
+}
